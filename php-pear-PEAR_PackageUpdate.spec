@@ -5,7 +5,7 @@
 %define		_pearname	PEAR_PackageUpdate
 
 Summary:	%{_pearname} - a simple way to update packages at runtime
-Summary(pl):	%{_pearname} - prosty sposób do aktualizacji paczek w czasie dzia³ania aplikacji
+Summary(pl.UTF-8):   %{_pearname} - prosty sposÃ³b do aktualizacji paczek w czasie dziaÅ‚ania aplikacji
 Name:		php-pear-%{_pearname}
 Version:	0.5.1
 Release:	1
@@ -44,23 +44,23 @@ other package.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-PEAR_PackageUpdate (PPU) zosta³ zaprojektowany aby umo¿liwiæ
-developerom do³±czenie w prosty sposób automatycznej aktualizacji
-innych pakietów PEAR lub aplikacji korzystaj±cych ze sposobu
-instalacji PEAR. PPU sprawdzi czy jest dostêpna nowa wersja i zapyta
-u¿ytkownika czy chcieliby zaktualizowaæ pakiet. PPU korzysta z PEAR do
-komunikacji z serwerem kana³ów oraz do wykonania aktualizacji.
+%description -l pl.UTF-8
+PEAR_PackageUpdate (PPU) zostaÅ‚ zaprojektowany aby umoÅ¼liwiÄ‡
+developerom doÅ‚Ä…czenie w prosty sposÃ³b automatycznej aktualizacji
+innych pakietÃ³w PEAR lub aplikacji korzystajÄ…cych ze sposobu
+instalacji PEAR. PPU sprawdzi czy jest dostÄ™pna nowa wersja i zapyta
+uÅ¼ytkownika czy chcieliby zaktualizowaÄ‡ pakiet. PPU korzysta z PEAR do
+komunikacji z serwerem kanaÅ‚Ã³w oraz do wykonania aktualizacji.
 
-PPU pozwala u¿ytkownikowi koñcowemu na pewn± kontrolê kiedy maj± byæ
-powiadamiania o nowych aktualizacjach. Preferencje PPU pozwalaj±
-u¿ytkownikowi na pominiêcie pewnych rodzajów aktualizacji (poprawki
-b³êdów, drobne wydania), czy konkretnych statusów (devel, alpha,
-itp.), czy polecenie PPU aby nie pyta³ do czasu kolejnej wersji.
+PPU pozwala uÅ¼ytkownikowi koÅ„cowemu na pewnÄ… kontrolÄ™ kiedy majÄ… byÄ‡
+powiadamiania o nowych aktualizacjach. Preferencje PPU pozwalajÄ…
+uÅ¼ytkownikowi na pominiÄ™cie pewnych rodzajÃ³w aktualizacji (poprawki
+bÅ‚Ä™dÃ³w, drobne wydania), czy konkretnych statusÃ³w (devel, alpha,
+itp.), czy polecenie PPU aby nie pytaÅ‚ do czasu kolejnej wersji.
 
-PPU jest tylko silnikiem do aktualizacji pakietów. Nie powinien byæ
-u¿yty bezpo¶rednio. Zamiast tego, pakiety takie jak
-PEAR_PackageUpdate_GTK2 powinny byæ u¿yte.
+PPU jest tylko silnikiem do aktualizacji pakietÃ³w. Nie powinien byÄ‡
+uÅ¼yty bezpoÅ›rednio. Zamiast tego, pakiety takie jak
+PEAR_PackageUpdate_GTK2 powinny byÄ‡ uÅ¼yte.
 
 Ta klasa ma w PEAR status: %{_status}.
 
