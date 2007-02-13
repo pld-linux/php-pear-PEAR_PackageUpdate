@@ -5,7 +5,7 @@
 %define		_pearname	PEAR_PackageUpdate
 
 Summary:	%{_pearname} - a simple way to update packages at runtime
-Summary(pl.UTF-8):   %{_pearname} - prosty sposób do aktualizacji paczek w czasie działania aplikacji
+Summary(pl.UTF-8):	%{_pearname} - prosty sposób do aktualizacji paczek w czasie działania aplikacji
 Name:		php-pear-%{_pearname}
 Version:	0.5.1
 Release:	1
