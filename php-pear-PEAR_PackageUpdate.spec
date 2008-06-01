@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - a simple way to update packages at runtime
 Summary(pl.UTF-8):	%{_pearname} - prosty sposób do aktualizacji paczek w czasie działania aplikacji
 Name:		php-pear-%{_pearname}
-Version:	1.0.0
+Version:	1.0.1
 Release:	1
 License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	d4c0d2c41c8a26247d17f98c92a5e761
+# Source0-md5:	92488bdec8c1d93cfba950b93125ab0b
 URL:		http://pear.php.net/package/PEAR_PackageUpdate/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
