@@ -1,18 +1,19 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		PEAR
 %define		_subclass	PackageUpdate
-%define		_status		stable
+%define		_status		beta
 %define		_pearname	PEAR_PackageUpdate
-
+%define		subver		RC1
+%define		rel			1
 Summary:	%{_pearname} - a simple way to update packages at runtime
 Summary(pl.UTF-8):	%{_pearname} - prosty sposób do aktualizacji paczek w czasie działania aplikacji
 Name:		php-pear-%{_pearname}
-Version:	1.0.4
-Release:	1
+Version:	1.1.0
+Release:	0.%{subver}.%{rel}
 License:	PHP License
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	ded7d31f614d5afe5818199628c2c16e
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{subver}.tgz
+# Source0-md5:	dd8b512a13bca2861ea1881c689c13e2
 URL:		http://pear.php.net/package/PEAR_PackageUpdate/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
