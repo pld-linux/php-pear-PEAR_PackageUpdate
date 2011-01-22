@@ -1,10 +1,8 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		PEAR
-%define		_subclass	PackageUpdate
 %define		_status		beta
 %define		_pearname	PEAR_PackageUpdate
 %define		subver		RC1
-%define		rel			1
+%define		rel			2
 Summary:	%{_pearname} - a simple way to update packages at runtime
 Summary(pl.UTF-8):	%{_pearname} - prosty sposób do aktualizacji paczek w czasie działania aplikacji
 Name:		php-pear-%{_pearname}
@@ -20,6 +18,7 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
 Requires:	php-pear-PEAR >= 1:1.4.8
+Obsoletes:	php-pear-PEAR_PackageUpdate-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -64,19 +63,6 @@ PEAR_PackageUpdate_GTK2 powinny być użyte.
 
 Ta klasa ma w PEAR status: %{_status}.
 
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
-
 %prep
 %pear_package_setup
 
@@ -94,7 +80,3 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/PEAR/PackageUpdate.php
 %{php_pear_dir}/PEAR/PackageUpdate
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/PEAR_PackageUpdate
